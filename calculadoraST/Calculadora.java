@@ -21,7 +21,7 @@ public class Calculadora {
 	String operacao, resposta;
 	
 	
-	//	 Iniciando a aplicaÁ„o
+	//	 Iniciando a aplica√ß√£o
 	 
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
@@ -36,15 +36,13 @@ public class Calculadora {
 		});
 	}
 
-	// Criando a aplicaÁ„o
-	 
 	public Calculadora() {
-		inicializar();
+		iniciar();
 	}
 
-	// mÈtodo inicializar 
+	// m√©todo iniciar 
 	
-	private void inicializar() {
+	private void iniciar() {
 		frmCalculadora = new JFrame();
 		frmCalculadora.getContentPane().setBackground(new Color(230, 230, 250));
 		frmCalculadora.setTitle("CALCULADORA ST");
@@ -60,9 +58,9 @@ public class Calculadora {
 		frmCalculadora.getContentPane().add(textField);
 		textField.setColumns(10);
 		
-		// Primeira fileira de Botıes
+		// Primeira fileira de Bot√µes
 		
-		// Bot„o Backspace
+		// Bot√£o Backspace
 		JButton btnBackspace = new JButton("\uF0E7");
 		btnBackspace.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -88,7 +86,7 @@ public class Calculadora {
 			}
 		});
 		
-		// Bot„o Limpar (C)
+		// Bot√£o Limpar (C)
 		btnLimpar.setFont( new Font("Tahoma", Font.BOLD, 20));
 		btnLimpar.setBounds(78, 65, 58, 50);
 		frmCalculadora.getContentPane().add(btnLimpar);
@@ -102,12 +100,12 @@ public class Calculadora {
 			}
 		});
 		
-		// Bot„o Resto 
+		// Bot√£o Resto 
 		btnResto.setFont(new Font("Tahoma", Font.BOLD, 8));
 		btnResto.setBounds(146, 65, 58, 50);
 		frmCalculadora.getContentPane().add(btnResto);
 		
-		// Bot„o Soma
+		// Bot√£o Soma
 		JButton btnSoma = new JButton("+");
 		btnSoma.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -120,9 +118,9 @@ public class Calculadora {
 		btnSoma.setBounds(214, 65, 58, 50);
 		frmCalculadora.getContentPane().add(btnSoma);
 		
-		// Segunda fileira de Botıes 
+		// Segunda fileira de Bot√µes 
 		
-		// Bot„o 7
+		// Bot√£o 7
 		JButton btn7 = new JButton("7");
 		btn7.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -135,7 +133,7 @@ public class Calculadora {
 		btn7.setBounds(10, 125, 58, 50);
 		frmCalculadora.getContentPane().add(btn7);
 		
-		// Bot„o 8
+		// Bot√£o 8
 		JButton btn8 = new JButton("8");
 		btn8.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -149,7 +147,7 @@ public class Calculadora {
 		btn8.setBounds(78, 125, 58, 50);
 		frmCalculadora.getContentPane().add(btn8);
 		
-		// Bot„o
+		// Bot√£o
 		JButton btn9 = new JButton("9");
 		btn9.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -162,7 +160,7 @@ public class Calculadora {
 		btn9.setBounds(146, 125, 58, 50);
 		frmCalculadora.getContentPane().add(btn9);
 		
-		// Bot„o SubtraÁ„o
+		// Bot√£o Subtra√ß√£o
 		JButton btnSub = new JButton("-");
 		btnSub.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -175,9 +173,9 @@ public class Calculadora {
 		btnSub.setBounds(214, 125, 58, 50);
 		frmCalculadora.getContentPane().add(btnSub);
 		
-		// Terceira fileira de Botıes
+		// Terceira fileira de Bot√µes
 		
-		// Bot„o 4
+		// Bot√£o 4
 		JButton btn4 = new JButton("4");
 		btn4.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -189,7 +187,7 @@ public class Calculadora {
 		btn4.setBounds(10, 185, 58, 50);
 		frmCalculadora.getContentPane().add(btn4);
 		
-		// Bot„o 5
+		// Bot√£o 5
 		JButton btn5 = new JButton("5");
 		btn5.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -202,7 +200,7 @@ public class Calculadora {
 		btn5.setBounds(78, 185, 58, 50);
 		frmCalculadora.getContentPane().add(btn5);
 		
-		// Bot„o 6
+		// Bot√£o 6
 		JButton btn6 = new JButton("6");
 		btn6.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -215,7 +213,7 @@ public class Calculadora {
 		btn6.setBounds(146, 185, 58, 50);
 		frmCalculadora.getContentPane().add(btn6);
 		
-		// Bot„o Divis„o
+		// Bot√£o Divis√£o
 		JButton btnDiv = new JButton("/");
 		btnDiv.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -228,9 +226,9 @@ public class Calculadora {
 		btnDiv.setBounds(214, 185, 58, 50);
 		frmCalculadora.getContentPane().add(btnDiv);
 		
-		// Quarta fileira de Botıes
+		// Quarta fileira de Bot√µes
 		
-		// Bot„o 1
+		// Bot√£o 1
 		JButton btn1 = new JButton("1");
 		btn1.addActionListener(new ActionListener() {
 		public void actionPerformed(ActionEvent e) {
@@ -244,7 +242,7 @@ public class Calculadora {
 		frmCalculadora.getContentPane().add(btn1);
 		
 		
-		// Bot„o 2
+		// Bot√£o 2
 		JButton btn2 = new JButton("2");
 		btn2.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -257,7 +255,7 @@ public class Calculadora {
 		btn2.setBounds(78, 245, 58, 50);
 		frmCalculadora.getContentPane().add(btn2);
 				
-		// Bot„o 3
+		// Bot√£o 3
 		JButton btn3 = new JButton("3");
 		btn3.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -270,7 +268,7 @@ public class Calculadora {
 		btn3.setBounds(146, 245, 58, 50);
 		frmCalculadora.getContentPane().add(btn3);
 		
-		// Bot„o MultiplicaÁ„o
+		// Bot√£o Multiplica√ß√£o
 		JButton btnMult = new JButton("*");
 		btnMult.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -283,9 +281,9 @@ public class Calculadora {
 		btnMult.setBounds(214, 245, 58, 50);
 		frmCalculadora.getContentPane().add(btnMult);
 				
-		// Quinta fileira de Botıes
+		// Quinta fileira de Bot√µes
 				
-		// Bot„o 0
+		// Bot√£o 0
 		JButton btn0 = new JButton("0");
 		btn0.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -298,13 +296,13 @@ public class Calculadora {
 		btn0.setBounds(10, 305, 58, 50);
 		frmCalculadora.getContentPane().add(btn0);
 				
-		// Bot„o Ponto
+		// Bot√£o Ponto
 		JButton btnPonto = new JButton(".");
 		btnPonto.setFont(new Font("Tahoma", Font.BOLD, 20));
 		btnPonto.setBounds(78, 305, 58, 50);
 		frmCalculadora.getContentPane().add(btnPonto);
 				
-		// Bot„o para mudar valor positivo/negativo
+		// Bot√£o para mudar valor positivo/negativo
 		JButton btnMaisMenos = new JButton("+-");
 		btnMaisMenos.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -318,7 +316,7 @@ public class Calculadora {
 		btnMaisMenos.setBounds(146, 305, 58, 50);
 		frmCalculadora.getContentPane().add(btnMaisMenos);
 				
-		// Bot„o Igual
+		// Bot√£o Igual
 		JButton btnIgual = new JButton("=");
 		btnIgual.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
